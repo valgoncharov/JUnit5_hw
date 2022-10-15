@@ -80,7 +80,7 @@ public class KinopoiskTest {
 
     @DisplayName("Check list film and serial")
     @EnumSource(Menu.class)
-    @ParameterizedTest(name = "Проверка отображения кнопок на странице {1}")
+    @ParameterizedTest
     void kinopoiskButtonList(Menu menu){
          open("https://www.kinopoisk.ru/lists/categories/movies/");
          $$(".styles_container__TJkuX.styles_categories__ly3pq")
